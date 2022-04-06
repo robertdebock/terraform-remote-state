@@ -2,7 +2,7 @@
 
 This repository explores what terraform_remote_state exposes.
 
-## `bucket
+## `bucket`
 
 This code will create the bucket to save the state.
 
