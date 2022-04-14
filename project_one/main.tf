@@ -1,10 +1,11 @@
 terraform {
   backend "gcs"{
-    bucket      = "terraform-state-qsnger"
+    bucket      = "INSERT_THE_BUCKET_NAME_HERE"
   }
 }
 
 resource "local_file" "foo" {
-    content  = "foo!"
-    filename = "${path.module}/foo.bar"
+  count    = 4
+  content  = "foo!"
+  filename = "${path.module}/foo-${count.index}.bar"
 }

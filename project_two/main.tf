@@ -1,7 +1,7 @@
 data "terraform_remote_state" "one" {
     backend = "gcs"
     config = {
-        bucket = "terraform-state-qsnger"
+        bucket = "INSERT_THE_BUCKET_NAME_HERE"
     }
 }
 

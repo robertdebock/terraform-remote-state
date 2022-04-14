@@ -3,6 +3,6 @@ output "first" {
 }
 
 output "second" {
-  value = "Some sensitive value."
+  value     = "Some sensitive value."
   sensitive = true
 }
