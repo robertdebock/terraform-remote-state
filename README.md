@@ -17,7 +17,7 @@ This project will read the remote state of `project_one`.
 ## Usage
 
 1. `cd bucket ; terraform apply`. Save the name of the created bucket.
-2. `cd ../project_one`. Place the bucket name in `main.tf`.
+2. `cd ../project_one`. Place the bucket name in `terraform.tf`.
 3. `terraform init ; terraform apply`.
 4. `cd ../project_two`. Place the bucket name in `main.tf`.
 5. `terraform init ; terraform apply`.
